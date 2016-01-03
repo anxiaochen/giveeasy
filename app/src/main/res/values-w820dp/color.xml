@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="light_grey" type="color">#D3D3D3</item>
+    <item name="white" type="color">#FFFFFF</item>
+    <item name="green" type="color">#219B0A</item>
+    <item name="yellow" type="color">#FFFF00</item>
+    <item name="blue" type="color">#0000FF</item>
+    <item name="red" type="color">#FF0000</item>
+
+    <color name="separator">#FF909090</color>
+    <color name="promo_background">#B1B7C1</color>
+    <color name="promo_item_label_color">#BBBBBB</color>
+    <color name="promo_item_label_background">#99444444</color>
+    <color name="wallet_details_color">#000000</color>
+    <color name="wallet_dark_grey">#666666</color>
+    <color name="bikestore_button_text">#000000</color>
+    <color name="bikestore_white">#FFFFFF</color>
+
+
+</resources>

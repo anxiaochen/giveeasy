@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp" >
+
+
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+
+    <!-- charity logo img -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/charitylogoimg" />
+
+    <!-- Name label -->
+    <TextView
+        android:id="@+id/charityname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Name: "
+        android:textColor="#5d5d5d"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/charitylogoimg" />
+
+    <!-- Des label -->
+    <TextView
+        android:id="@+id/charitydes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Des"
+        android:textColor="#5d5d5d"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/charityname"
+        android:layout_toEndOf="@+id/charitylogoimg" />
+
+    <!-- last year donation sum label -->
+    <TextView
+        android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="currencyinfo"
+        android:textColor="#145d07"
+        android:layout_below="@+id/charitydes"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
+
+</LinearLayout>

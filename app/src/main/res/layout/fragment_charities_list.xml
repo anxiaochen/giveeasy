@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#1c80c3"
+        android:paddingBottom="10dp"
+        android:paddingTop="3dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:id="@+id/logout"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/normal_buttonshape"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="username"
+            android:id="@+id/usernmelabel"
+            android:textColor="#ffffff"
+            android:layout_toRightOf="@+id/logout"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/logout"
+        android:layout_marginTop="10dp">
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/paybtn"
+        android:background="@drawable/empty_cart"
+        android:layout_gravity="right"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/sortbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sort by name"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/normal_buttonshape"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#fbfdf3">
+    </Button>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/charity_list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="9dp" />
+
+</LinearLayout>
+
